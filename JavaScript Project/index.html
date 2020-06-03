@@ -1,0 +1,53 @@
+﻿<!DOCTYPE html>
+<html>
+<body>
+    <p>Click on the car you desire.</p>
+    <p id="BMW" onclick="pickCar('1')">BMW</p>
+    <p id="Porche" onclick="pickCar('2')">Porche</p>
+    <p id="Jeep" onclick="pickCar('3')">Jeep</p>
+    <hr>
+    <p>List of motorcycles</p>
+    <p id="demo"></p>
+    
+    <script>
+        <!--This code will display a message based on which car is clicked-- >
+        function pickCar(car) {
+            alert(car);
+            if (car == '1') {
+                document.getElementById("BMW").innerHTML = "Nice!";
+            }
+            if (car == '2') {
+                document.getElementById("Porche").innerHTML = "Sleek!";
+            }
+            if (car == '3') {
+                document.getElementById("Jeep").innerHTML = "Fun!";
+            }
+        }
+
+        <!-- Used to display five motorcycles using 3 different loops -->
+		window.onload = function loopCycle() {
+            var motorcycles = ["Harley Davidson", "BMW", "Honda", "Buell", "Ducati"];
+            var i;
+
+            for (i = 0; i < motorcycles.length; i++) {
+                alert("Motorcycle " + motorcycles[i] + " was added to the console");
+            }
+
+            i = 0;
+            while (i < 5) {
+                console.log(motorcycles[i]);
+                i++;
+            }
+            alert("All motorcycles have been added to the console!");
+
+            i = 0;
+            var text = "";
+            do {
+                text += motorcycles[i] + "<br><br>";
+                i++;
+            } while (i < 5);
+            document.getElementById("demo").innerHTML = text;
+		}    
+    </script>
+</body>
+</html>

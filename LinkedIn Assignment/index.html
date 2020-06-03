@@ -1,0 +1,40 @@
+﻿<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="utf-8" />
+    <title>LinkedIn Assignment</title>
+</head>
+<body>
+    <h1>LikedIn Assignment</h1>
+    <h3>Created to demonstrate the ways of displaying data in JavaScript</h3>
+
+    <p id="demo1"></p>
+    <p id="demo2"></p>
+
+    <h4>Click on any of the buttons down below:</h4>
+    <button onclick="displayText();">innerHTML</button>
+    <button onclick="consoleText();">console.log()</button>
+    <button onclick="alertText();">window.alert()</button>
+    <button onclick="replaceText();">document.write()</button>
+
+    <script>
+        function displayText() {
+            document.getElementById("demo1").innerHTML = "Displayed using innerHTML";
+        }
+
+        function consoleText() {
+            document.getElementById("demo2").innerHTML = "See the result in the console!";
+            console.log("Displayed using console.log()");
+        }
+
+        function alertText() {
+            window.alert("Message displayed using window.alert()");
+        }
+
+        function replaceText() {
+            window.alert("Note: when using document.write() with functions called using onclick, all content will be replaced with what ever you are writing to the document");
+            document.write("Displayed using document.write()");
+        }
+    </script>
+</body>
+</html>

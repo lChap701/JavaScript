@@ -1,0 +1,105 @@
+<html>
+<head>
+<!-- 
+   New Perspectives on JavaScript
+   Tutorial 1
+   Review Assignment
+
+   Monroe Public Library
+   Author: Lucas Chapman
+   Date: 6/8/2020
+
+   Filename:         mpl2.htm
+   Supporting files: mpl2.jpg, mplstyles.css, random.js, 0.jpg - 9.jpg
+-->
+
+<title>Monroe Public Library</title>
+<link href="mplstyles.css" rel="stylesheet" type="text/css" />
+<script type="text/javascript" src="random.js"></script>
+<script>
+    /*
+     * The showImg() function displays a random image from the 0.jpg through 9.jpg files. The
+     * random image is designed to thwart hackers attempting to enter the library records data
+     * base by requiring visual confirmation.
+     */
+    function showImg() {
+        var imgNumber = randomInteger(9);   // Return a random number from 0 to 9
+        var i; // represents the image number of each image
+
+        for (i = 0; i < 9; i++) {
+            if (imgNumber == i) {
+                document.write("<img src='" + imgNumber + ".jpg' alt=''/>");
+            }
+        }
+    }
+</script>
+</head>
+
+<body>
+<p id="head">
+   <img src="mpl.jpg" alt="Monroe Public Library" />
+</p>
+
+<div id="links">
+   <span>Quick Links</span>
+   <a href="#">Home Page</a>
+   <a href="#">Online Catalog</a>
+   <a href="#">Friends of MPL</a>
+   <a href="#">New Books and Other Good Reading</a>
+   <a href="#">Illinois Virtual Library</a>
+   <a href="#">Internet Public Library</a>
+   <a href="#">Services and Collection</a>
+   <a href="#">Adult Programs</a>
+   <a href="#">Teen Central</a>
+   <a href="#">Children's Room</a>
+   <a href="#">Computers at MPL</a>
+   <a href="#">Computer Rules and Procedures</a>
+   <a href="#">Staff Directory</a>
+   <a href="#">Library Records</a>
+</div>
+
+<div id="main">
+<h2>Library Records</h2>
+<p>To view the library records, enter your username and password.</p>
+
+<table border="1" cellpadding="5" cellspacing="0">
+<tr>
+   <th>Username</th>
+   <td><input size="20" /></td>
+</tr>
+<tr>	
+   <th>Password</th>
+   <td><input type="password" size="20" /></td>
+</tr>
+<tr>
+   <td>As a final security check, enter the 5 numbers 
+   you see displayed below.</td>
+   <td><input size="6" /></td>
+</tr>
+<tr>
+   <td colspan="2" class="center">
+   <input type="button" value="View Library Records" />
+   </td>
+</tr>
+<tr>
+   <td colspan="2" class="center">
+   <script>
+       for (var i = 0; i < 5; i++) {
+           showImg();
+       }
+   </script>
+   </td>
+</tr>
+</table>
+</div>
+
+<address>
+   <b>Monroe Public Library</b>
+   580 Main Street, Monroe IL 45812 &nbsp;&nbsp;54890
+   <b>Phone</b>(612) 555-0211  
+   <b>Fax</b>(612) 555-0241
+</address>
+          
+
+</body>
+</html>

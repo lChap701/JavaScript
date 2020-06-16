@@ -1,0 +1,42 @@
+﻿<!DOCTYPE html>
+
+<html lang="en">
+<head>
+    <meta charset="utf-8">
+    <title>JavaScript Animation Lab Activity</title>
+
+    <style>
+        body {
+            overflow: hidden;   /* hides BMW when starting off screen */
+        }
+
+        #animation {
+            width: 259px;
+            position: absolute;
+        }
+    </style>
+</head>
+<body onload="myMove()">
+    <div id="animation">
+        <img src="images/bmwprofile.jpg" alt="bmw">
+    </div>
+    <script>
+        function myMove() {
+            var elem = document.getElementById("animation");
+            var pos = 1264;
+
+            setInterval(frame, 1);
+
+            function frame() {
+                if (pos == -250) {
+                    pos = 1240;
+                } else {
+                    pos--;
+                    elem.style.top = "100px";
+                    elem.style.left = pos + "px";
+                }
+            }
+        }
+    </script>
+</body>
+</html>

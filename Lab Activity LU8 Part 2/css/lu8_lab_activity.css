@@ -1,0 +1,17 @@
+﻿/* This file is part of lu8_lab_activity.html  */
+.container {
+    display: flex;
+    align-items: center;    
+}
+
+input[type=text] {
+    margin-left: 12px;
+}
+
+input[type=button], option {
+    cursor: pointer;
+}
+
+#clubs {
+    margin-left: 5px;
+}

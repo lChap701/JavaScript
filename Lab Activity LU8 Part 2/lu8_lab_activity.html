@@ -1,0 +1,38 @@
+﻿<!DOCTYPE html>
+<!-- Created by Lucas Chapman 7/13/2020 -->
+<!-- This page uses JavaScript to add attributes to elements and extra features to the form -->
+<html lang="en">
+<head>
+    <meta charset="utf-8">
+    <title>Lab Activity LU8</title>
+    <link href="css/lu8_lab_activity.css" rel="stylesheet">
+</head>
+<body>
+    <h1>JavaScript HTML Input</h1>
+    <form id="myForm" name="Clubs Form">
+        <label for="fname">First Name: </label>
+        <input type="text" name="fname" value="">
+        <br>
+        <br>
+        <label for="lname">Last Name: </label>
+        <input type="text" name="lname" value="">
+        <br>
+        <br>
+        <div class="container">
+            <label for="clubs">Select a club: </label>
+            <select id="clubs" name="clubs" size="4" title="Hold the Shift or the Ctrl key to select multiple clubs">
+                <option value="Computer Science Club">Computer Science Club</option>
+                <option value="Computer Networking Club">Computer Networking Club</option>
+                <option value="Robotics Club">Robotics Club</option>
+                <option value="Math Club">Math Club</option>
+                <option value="Science Club">Science Club</option>
+            </select>
+        </div>
+        <br>
+        <input type="button" name="Submit" value="Submit" onclick="submitForm();">
+        <input type="button" name="Reset" value="Refresh" onclick="resetForm();">
+    </form>
+    <!-- Script for adding attributes to elements and extra features to the form-->
+    <script src="js/lu8_lab_activity.js"></script>
+</body>
+</html>

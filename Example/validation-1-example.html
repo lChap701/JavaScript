@@ -1,0 +1,21 @@
+<!DOCTYPE html>
+<html>
+<body>
+	<p>Enter an age and click OK:</p>
+	<input id="age" type="number" min="18" max="65" required>
+	<button onclick="checkAge()">OK</button>
+	<p>If the number is less than 18 or greater than 65, an error message will be displayed.</p>
+	<p id="msg"></p>
+<script>
+function checkAge() {
+	var inpObj = document.getElementById("age");
+	if (inpObj.checkValidity() == false) {
+		document.getElementById("msg").innerHTML =
+	inpObj.validationMessage;
+	} else {
+		document.getElementById("msg").innerHTML = "Age Is Valid";
+	}
+}
+</script>
+</body>
+</html>

@@ -1,0 +1,21 @@
+<!DOCTYPE html>
+<html>
+<body>
+	<p>Enter an age and click OK:</p>
+	<input id="age" type="number" min="18">
+	<button onclick="checkAge()">OK</button>
+	<p>If the age is less than 18 (the input's max attribute), an error message will be displayed.</p>
+	<p id="msg"></p>
+<script>
+function checkAge() {
+	var txt = "";
+	if (document.getElementById("age").validity.rangeUnderflow) {
+		txt = "Age not met";
+	} else {
+		txt = "age OK";
+	}
+	document.getElementById("msg").innerHTML = txt;
+}
+</script>
+</body>
+</html>

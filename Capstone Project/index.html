@@ -1,0 +1,72 @@
+﻿<!-- Created 8/3/2020 by Lucas Chapman -->
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="utf-8" />
+    <title>Home</title>
+    <!-- Lightbox 2 Stylesheet -->
+    <link rel="stylesheet" href="css/lightbox.css">
+    <!-- Main Stylesheet -->
+    <link rel="stylesheet" href="css/capstone.css">
+    <!-- jQuery Script -->
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+    <!-- Accordion Script -->
+    <script src="js/accordion.min.js" defer></script>
+    <!-- Lightbox 2 Script -->
+    <script src="js/lightbox.min.js" defer></script>
+    <!-- Animation Script -->
+    <script src="js/animation.min.js" defer></script>
+</head>
+<body>
+    <div id="overlay"></div>
+    <header>
+        <h1>The Computer Repair Center</h1>
+        <div id="animation-container">
+            <img src="images/kindpng_2471467.png" alt="mouse cursor" id="animated">
+        </div>
+    </header>
+    <nav>
+        <a href="index.html" title="Home">Home</a>
+        <a href="tutorials.html" title="Tutorials">Tutorials</a>
+    </nav>
+    <main>
+        <h2>What is this website?</h2>
+        <p>The purpose of this website is to teach others how to repair their laptop and/or computer.</p>
+
+        <h2>Computers We Recently Repaired</h2>
+        <div class="grid-container">
+            <div class="wrapper">
+                <a href="images/pexels-bich-tran-1714341.jpg" alt="Dell Computer" title="Dell Computer" data-lightbox="computer/laptop" data-title="A Dell computer that we repaired"><img src="images/pexels-bich-tran-1714341.jpg" class="thumb"></a>
+                <button class="accordion">Repaired Dell Computer</button>
+                <div class="panel">
+                    <p>This is the Dell computer we had repaired recently. It had a broken screen, missing keys, and a damaged battery. It took about 2 hours to fix.</p>
+                </div>
+            </div>
+
+            <div class="wrapper">
+                <a href="images/pexels-dzenina-lukac-930530.jpg" alt="Apple Computer" data-lightbox="computer/laptop" data-title="An Apple computer that we repaired" title="Apple Computer"><img src="images/pexels-dzenina-lukac-930530.jpg" class="thumb"></a>
+                <button class="accordion">Repaired Apple Computer</button>
+                <div class="panel">
+                    <p>This is the Apple computer we had repaired recently. It had a broken screen, a damaged motherboard, and a damaged battery. It took about 10 hours to fix.</p>
+                </div>
+            </div>
+
+            <div class="wrapper">
+                <a href="images/pexels-kaboompics-com-6598.jpg" alt="Acer Chromebook" data-lightbox="computer/laptop" data-title="An Acer Chromebook that we repaired" title="Acer Chromebook"><img src="images/pexels-kaboompics-com-6598.jpg" class="thumb"></a>
+                <button class="accordion">Repaired Chromebook</button>
+                <div class="panel">
+                    <p>This is the Chromebook we had repaired recently. It had missing keys and a damaged battery. It took about 1 hours to fix.</p>
+                </div>
+            </div>
+
+            <div class="wrapper">
+                <a href="images/pexels-samer-daboul-844733.jpg" alt="HP Laptop" data-lightbox="computer/laptop" data-title="A HP laptop that we repaired" title="HP Laptop"><img src="images/pexels-samer-daboul-844733.jpg" class="thumb"></a>
+                <button class="accordion">Repaired HP Laptop</button>
+                <div class="panel">
+                    <p>This is the HP laptop we had repaired recently. It had a damaged CPU and a damaged battery. It took about 10 hours to fix.</p>
+                </div>
+            </div>
+        </div>
+    </main>
+</body>
+</html>

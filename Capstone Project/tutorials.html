@@ -1,0 +1,90 @@
+﻿<!-- Created 8/4/2020 by Lucas Chapman -->
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="utf-8" />
+    <title>Tutorials</title>
+    <!-- Lightbox 2 Stylesheet -->
+    <link rel="stylesheet" href="css/lightbox.css">
+    <!-- Main Stylesheet -->
+    <link rel="stylesheet" href="css/capstone.css">
+    <!-- jQuery Script -->
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+    <!-- Accordion Script -->
+    <script src="js/accordion.min.js" defer></script>
+    <!-- Lightbox 2 Script -->
+    <script src="js/lightbox.min.js" defer></script>
+    <!-- Animation Script -->
+    <script src="js/animation.min.js" defer></script>
+    <!-- Tutorials Modal Script -->
+    <script src="js/tutorials.min.js" defer></script>
+</head>
+<body>
+    <div id="overlay"></div>
+    <header>
+        <h1>The Computer Repair Center</h1>
+        <div id="animation-container">
+            <img src="images/kindpng_2471467.png" alt="mouse cursor" id="animated">
+        </div>
+    </header>
+    <nav>
+        <a href="index.html" title="Home">Home</a>
+        <a href="tutorials.html" title="Tutorials">Tutorials</a>
+    </nav>
+    <main>
+        <h2>Tutorials</h2>
+        <b>Click on any of the <span class="accordion-demo">accordions</span> down below to look through our tutorials.</b>
+        <div class="grid-container-2">
+            <div class="wrapper">
+                <a href="images/pexels-pixabay-257736.jpg" alt="Hardware Repair" title="Hardware Repair Tutorials" data-lightbox="repair" data-title="Hardware repair tutorials"><img src="images/pexels-pixabay-257736.jpg" class="thumb-big"></a>
+                <button class="accordion">Hardware Repair Tutorials</button>
+                <div class="panel">
+                    <h3>Tutorials</h3>
+                    <a class="activator" title="Motherboard Repairs">- Motherboard Repairs</a><br>
+                    <a class="activator" title="Hard Drive Repairs">- Hard Drive Repairs</a><br>
+                    <a class="activator" title="RAM Repairs">- RAM Repairs</a><br>
+                    <a class="activator" title="CPU Repairs">- CPU Repairs</a><br>
+                    <a class="activator" title="Battery Repairs">- Battery Repairs</a><br>
+                    <a class="activator" title="Keyboard Repairs">- Keyboard Repairs</a><br>
+                    <a class="activator" title="Screen Repairs">- Screen Repairs</a><br>
+                    <a class="activator" title="Speaker Repairs">- Speaker Repairs</a><br>
+                    <a class="activator" title="Microphone Repairs">- Microphone Repairs</a><br>
+                    <a class="activator" title="Touchpad/Mouse Repairs">- Touchpad/Mouse Repairs</a><br>
+                    <a class="activator" title="Driver Repairs">- Driver Repairs</a><br><br>
+                </div>
+            </div>
+
+            <div class="wrapper">
+                <a href="images/pexels-pixabay-207580.jpg" alt="Software Repair" title="Software Repair Tutorials" data-lightbox="repair" data-title="Software repair tutorials"><img src="images/pexels-pixabay-207580.jpg" class="thumb-big"></a>
+                <button class="accordion">Software Repair Tutorials</button>
+                <div class="panel">
+                    <h3>Tutorials</h3>
+                    <a class="activator" title="Apps/Program Repairs">- Apps/Program Repairs</a><br>
+                    <a class="activator" title="Licensing Repairs">- Licensing Repairs</a><br>
+                    <a class="activator" title="Virus Removals">- Virus Removals</a><br>
+                    <a class="activator" title="Spyware/Adware/Ransomware Removals">- Spyware/Adware/Ransomware Removals</a><br>
+                    <a class="activator" title="Update Issues">- Update Issues</a><br>
+                    <a class="activator" title="Internet Issues">- Internet Issues</a><br>
+                    <a class="activator" title="Bluetooth Issues">- Bluetooth Issues</a><br><br>
+                </div>
+            </div>
+        </div>
+
+        <!-- The Modal -->
+        <div id="tutModal" class="modal">
+            <!-- Modal content -->
+            <div class="modal-content">
+                <span class="close">&times;</span>
+                <h2>Manufactor</h2>
+                <a href="#" class="tutLink" title="Microsoft">- Microsoft</a><br>
+                <a href="#" class="tutLink" title="Apple">- Apple</a><br>
+                <a href="#" class="tutLink" title="Apple">- HP</a><br>
+                <a href="#" class="tutLink" title="Dell">- Dell</a><br>
+                <a href="#" class="tutLink" title="Acer">- Acer</a><br>
+                <a href="#" class="tutLink" title="Lenovo">- Lenovo</a><br>
+                <a href="#" class="tutLink" title="Google">- Google</a><br><br>
+            </div>
+        </div>
+    </main>
+</body>
+</html>

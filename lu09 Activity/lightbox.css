@@ -1,0 +1,47 @@
+#lightbox {
+	background-color: #eee;
+	padding: 10px;
+	border: 2px solid #e1e1e1;
+}
+#lightboxDetails{
+	font-size: 0.8em;
+	padding-top: 0.4em;
+	}	
+#lightboxCaption{ float: left; }
+#keyboardMsg{ float: right; }
+#closeButton{ top: 5px; right: 5px; }
+
+#lightbox img{ border: none; clear: both; } 
+#overlay img{ border: none; }
+
+#overlay { background-image: linear-gradient(to bottom right, rgba(51, 51, 51, 0), rgba(0, 0, 0, .8)), url("overlay.png"); }
+
+* html #overlay {
+	background-color: #333;
+	background-color: transparent;
+	background-image: url(blank.gif);	
+	filter: progid:DXImageTransform.Microsoft.AlphaImageLoader(src="overlay.png", sizingMethod="scale");
+}
+
+/* Code that I added to this stylesheet */
+.rows {
+	display: inline-grid;
+	grid-template-columns: auto auto auto;
+	grid-template-rows: auto auto auto;
+	grid-gap: .6em 1em;
+}
+
+/* Uses concepts in https://www.w3schools.com/howto/howto_css_zoom_hover.asp */
+.zoom {
+	transition: transform .2s;
+}
+.zoom #closeButton {
+	transition: top .2s;
+}
+	.zoom:hover {
+		transform: scale(1.1);
+	}
+		.zoom:hover #closeButton {
+			top: 4px;
+			right: 4px;
+		}
